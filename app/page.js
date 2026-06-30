@@ -148,7 +148,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#f8fafc] md:p-8 relative selection:bg-blue-900 selection:text-white">
       
-      <div className={`fixed top-5 right-5 z-50 transform transition-all duration-300 ${toast.show ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0 pointer-events-none'}`}>
+      <div className={`fixed top-5 right-5 z-[100] transform transition-all duration-300 ${toast.show ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0 pointer-events-none'}`}>
         <div className={`px-6 py-4 rounded-xl shadow-2xl text-white font-medium flex items-center gap-3 tracking-wide ${toast.type === 'error' ? 'bg-orange-600' : 'bg-emerald-600'}`}>
           <p>{toast.message}</p>
         </div>
